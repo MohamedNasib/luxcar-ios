@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeaderView_BackButton" customModule="Luxcar" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="h3n-Jj-H88" id="TEg-Rw-bFe"/>
+                <outlet property="contentView" destination="Ubp-2X-d0l" id="mfw-Lu-3rN"/>
+                <outlet property="title" destination="SGA-L5-09b" id="u0S-ST-u5Z"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="NavigationBarView" id="Ubp-2X-d0l">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="26"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iXA-IH-PKr">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="26"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SGA-L5-09b">
+                            <rect key="frame" x="173" y="0.0" width="47" height="26"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="bold">
+                                    <real key="value" value="18"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3n-Jj-H88">
+                            <rect key="frame" x="16" y="0.0" width="24" height="26"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="back"/>
+                            <connections>
+                                <action selector="back:" destination="-1" eventType="touchUpInside" id="sTN-8G-k1I"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="26" id="1rD-08-KHb"/>
+                        <constraint firstItem="h3n-Jj-H88" firstAttribute="top" secondItem="iXA-IH-PKr" secondAttribute="top" id="7Gw-EL-zkx"/>
+                        <constraint firstItem="SGA-L5-09b" firstAttribute="top" secondItem="iXA-IH-PKr" secondAttribute="top" id="8nX-PF-PiR"/>
+                        <constraint firstAttribute="bottom" secondItem="SGA-L5-09b" secondAttribute="bottom" id="LLL-UY-E5o"/>
+                        <constraint firstAttribute="bottom" secondItem="h3n-Jj-H88" secondAttribute="bottom" id="PTa-BA-2dY"/>
+                        <constraint firstItem="SGA-L5-09b" firstAttribute="centerX" secondItem="iXA-IH-PKr" secondAttribute="centerX" id="WOC-gY-krX"/>
+                        <constraint firstItem="h3n-Jj-H88" firstAttribute="leading" secondItem="iXA-IH-PKr" secondAttribute="leading" constant="16" id="YTf-oF-fWV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="hh2-4z-9zv"/>
+            <constraints>
+                <constraint firstItem="iXA-IH-PKr" firstAttribute="leading" secondItem="hh2-4z-9zv" secondAttribute="leading" id="DGU-kt-SQb"/>
+                <constraint firstItem="iXA-IH-PKr" firstAttribute="trailing" secondItem="hh2-4z-9zv" secondAttribute="trailing" id="hOf-8e-pfq"/>
+                <constraint firstItem="iXA-IH-PKr" firstAttribute="top" secondItem="Ubp-2X-d0l" secondAttribute="top" id="hyV-K7-G97"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-124.42748091603053" y="235.91549295774649"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="24" height="24"/>
+    </resources>
+</document>

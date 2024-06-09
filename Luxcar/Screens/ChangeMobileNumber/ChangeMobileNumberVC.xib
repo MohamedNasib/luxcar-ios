@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChangeMobileNumberVC" customModule="Luxcar" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JOJ-0C-vlv">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Rh-ag-hUZ" customClass="HeaderView_BackButton" customModule="Luxcar" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="28"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="SZP-ME-4ni"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Change Mobile Number"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C56-Wb-rmY" customClass="TextFieldView" customModule="Luxcar" customModuleProvider="target">
+                            <rect key="frame" x="16" y="103.33333333333334" width="361" height="52"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mobile number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="41e-9g-Wbg">
+                                    <rect key="frame" x="16" y="0.0" width="329" height="52"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="regular">
+                                            <real key="value" value="14"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="52" id="BN4-tC-dnW"/>
+                                <constraint firstItem="41e-9g-Wbg" firstAttribute="top" secondItem="C56-Wb-rmY" secondAttribute="top" id="Vj3-ld-AXu"/>
+                                <constraint firstAttribute="trailing" secondItem="41e-9g-Wbg" secondAttribute="trailing" constant="16" id="ohh-xl-LtJ"/>
+                                <constraint firstItem="41e-9g-Wbg" firstAttribute="leading" secondItem="C56-Wb-rmY" secondAttribute="leading" constant="16" id="psB-0t-mMj"/>
+                                <constraint firstAttribute="bottom" secondItem="41e-9g-Wbg" secondAttribute="bottom" id="yRj-zK-bPz"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QcX-Xm-qcJ" customClass="MainButton" customModule="Luxcar" customModuleProvider="target">
+                            <rect key="frame" x="16" y="693" width="361" height="52"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="52" id="YSx-qU-OuU"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Change"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForNormal">
+                                    <color key="value" name="Primary"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="fontColorForNormal">
+                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You will Send a code via SMS. " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dg6-MN-Til">
+                            <rect key="frame" x="16" y="60.000000000000007" width="220" height="19.333333333333336"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="C56-Wb-rmY" firstAttribute="top" secondItem="dg6-MN-Til" secondAttribute="bottom" constant="24" id="3mh-wr-bGj"/>
+                        <constraint firstItem="3Rh-ag-hUZ" firstAttribute="leading" secondItem="JOJ-0C-vlv" secondAttribute="leading" id="AN4-DP-Ai4"/>
+                        <constraint firstAttribute="trailing" secondItem="QcX-Xm-qcJ" secondAttribute="trailing" constant="16" id="JVo-rj-dmW"/>
+                        <constraint firstAttribute="trailing" secondItem="C56-Wb-rmY" secondAttribute="trailing" constant="16" id="L2z-Ka-KtI"/>
+                        <constraint firstItem="3Rh-ag-hUZ" firstAttribute="top" secondItem="JOJ-0C-vlv" secondAttribute="top" id="OSw-g7-eS6"/>
+                        <constraint firstAttribute="trailing" secondItem="3Rh-ag-hUZ" secondAttribute="trailing" id="S2h-Ko-l2J"/>
+                        <constraint firstItem="C56-Wb-rmY" firstAttribute="leading" secondItem="JOJ-0C-vlv" secondAttribute="leading" constant="16" id="hai-U2-TsM"/>
+                        <constraint firstItem="dg6-MN-Til" firstAttribute="top" secondItem="3Rh-ag-hUZ" secondAttribute="bottom" constant="32" id="noX-5M-q0f"/>
+                        <constraint firstAttribute="bottom" secondItem="QcX-Xm-qcJ" secondAttribute="bottom" constant="14" id="r7g-a7-Rsh"/>
+                        <constraint firstItem="QcX-Xm-qcJ" firstAttribute="leading" secondItem="JOJ-0C-vlv" secondAttribute="leading" constant="16" id="uIK-aQ-ydT"/>
+                        <constraint firstItem="dg6-MN-Til" firstAttribute="leading" secondItem="JOJ-0C-vlv" secondAttribute="leading" constant="16" id="uyY-N5-fra"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="JOJ-0C-vlv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="6Rt-4e-lGC"/>
+                <constraint firstItem="JOJ-0C-vlv" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="lWe-Ku-De1"/>
+                <constraint firstItem="JOJ-0C-vlv" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ox2-uf-yLf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="JOJ-0C-vlv" secondAttribute="bottom" id="yRm-ia-y72"/>
+            </constraints>
+            <point key="canvasLocation" x="-28.244274809160306" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="QcX-Xm-qcJ">
+            <size key="intrinsicContentSize" width="66" height="35"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="Primary">
+            <color red="0.059000000357627869" green="0.40799999237060547" blue="0.67100000381469727" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

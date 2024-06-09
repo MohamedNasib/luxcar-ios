@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "closure #1 in HomeVC.getBrandList(params:):HomeVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.brands">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in FavoriteVC.getFavoritesCars(params:):FavoriteVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.cars">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in LoginVC.login(params:):LoginVC.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in HomeVC.getCarLatest():HomeVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "car">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
